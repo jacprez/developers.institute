@@ -1,0 +1,38 @@
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.background {
+	background: url(water.jpeg);
+	background-size: cover;
+	padding: 100px;
+	background-repeat: no-repeat;
+}
+
+h1 {
+	color: white;
+}
+
+.bottomhalf {
+	display: flex;
+	padding-left: 15%;
+	padding-right:15%;
+
+}
+
+.Responsive {
+	padding: 50px;
+	text-align: center;
+}
+
+
+
+
+
+

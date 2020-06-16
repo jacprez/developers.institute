@@ -1,0 +1,15 @@
+.col-md-4 {
+	padding: 2px;
+	border : 1px solid black;
+	box-sizing: border-box;
+	background: lightgray;
+}
+
+.col-md-12 {
+	padding: 2px;
+}
+
+
+body {
+	padding : 2px;
+}

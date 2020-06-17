@@ -1,0 +1,25 @@
+#wrapper {
+	border: 1px solid black;
+	height: 50vh;
+	display: grid;
+	grid-template-areas: 
+		"headline headline headline headline"
+		"leftbar leftbar rightbar rightbar";
+
+}
+
+.red {
+	background-color: red;
+	grid-area: headline;
+}
+.blue {
+	background-color: blue;
+	grid-area: leftbar;
+}
+.green {
+	background-color: green;
+	grid-area: rightbar;
+}
+/*.yellow {
+	background-color: yellow;
+}*/

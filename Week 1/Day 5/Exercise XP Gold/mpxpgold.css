@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+html,h1,h2,h3,h4,h5,h6,a{
+    font-family: "Raleway";
+}
+
+.navbar {
+	background-color: orange;
+}
+.navbar-brand {
+	color: white;
+}
+
+.titles {
+	margin-top: 40px;
+	margin-bottom: 30px;
+	text-align: center;
+	color: orange;
+}
+
+#container1 {
+	margin-top: 60px;
+}
+
+#bio {
+	display: flex;
+	align-items: center;
+}
+
+#pic-div {
+	border-right: 5px solid black;
+}
+
+img {
+	border-radius: 50%;
+	display: block;
+	margin: auto;
+}
+
+.header {
+	background-image: url(headerback.jpeg);
+	height: 500px;
+	background-attachment: fixed;
+	background-size: cover;
+
+}
+
+.nav-link {
+	color: white;
+}
+
+#text {
+  	color: white;
+  	padding: 200px;
+}
+
+#overlay {
+	width: 100%;
+	height: 500px;
+	background-color: rgba(0,0,0,0.5);
+}
+
+.col-md-8 {
+	padding: 40px;
+}
+.col-md-4 {
+	border-right: 2px solid #008080;
+}
+
+footer {
+	text-align: center;
+}
+#portrow {
+	height: 200px;
+	display: flex;
+	flex-wrap: nowrap;
+	margin: 10px;
+}
+
+#image1 {
+	background-image: url(blog1.jpeg);
+	height: 200px;
+	width: 100%;
+	border: none;
+	margin: 1px;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+#image2 {
+	background-image: url(blog2.jpeg);
+	height: 200px;
+	border: none;
+	margin: 1px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	
+}
+#image3 {
+	background-image: url(blog3.png);
+	height: 200px;
+	border: none;
+	margin: 1px;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+

@@ -54,13 +54,13 @@ function changeEnough(array_of_coins, total_price){
 // Exercise 4
 
 let shoppingList = ["banana", "orange" , "apple"];
-// let stock = { 
-//     "banana": 6, 
-//     "apple": 0,
-//     "pear": 12,
-//     "orange": 32,
-//     "blueberry":1
-// }  
+let stock = { 
+    "banana": 6, 
+    "apple": 0,
+    "pear": 12,
+    "orange": 32,
+    "blueberry":1
+}  
 
 let prices = {    
     "banana": 4, 
@@ -70,12 +70,31 @@ let prices = {
     "blueberry":10
 } 
 
-let total = 0;
-for (let item of shoppingList) {
-	total += prices[item]
-}
-console.log(total)
+// let total = 0;
+// for (let item of shoppingList) {
+// 	total += prices[item]
+// }
+// console.log(total)
 
+// Check if item is in stock 
+
+total = 0;
+
+function inStock(item){
+	return stock[item] > 0
+}
+function buy(item) {
+	total += prices[item];
+	stock[item] -=1;
+}
+
+
+// Execution
+for (item of shoppingList) {
+	if (inStock(item)) {
+		buy(item)
+	}
+}
 // Exercise 5
 
 function hotel_cost(){

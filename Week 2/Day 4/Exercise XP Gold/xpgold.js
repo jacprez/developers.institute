@@ -14,7 +14,7 @@ function playTheGame() {
 			alert("Sorry " + userNumber + " not a good number, goodbye!");
 		} else {
 			let computerNumber = Math.floor(Math.random() * 11)
-			test(userNumber, computerNumber)
+			console.log(computerNumber)
 		}
 	} else {
 		alert("No problem, goodbye!");
@@ -23,27 +23,32 @@ function playTheGame() {
 
 // Second Part
 
-counter = 0;
 
+counter = 0;
 function test(userNum, computerNum) {
-	if (userNum == computerNum) {
-		alert("Great, you won the game!")
-	} else if (userNum > computerNum) {
-		let guess = prompt(userNum + " is too big, guess again: ")
-		counter += 1
-		test(guess, computerNum)
-	} else if (userNum < computerNum) {
-		let guess = prompt(userNum + " is too small, guess again: ")
-		counter += 1
-		test(guess, computerNumber)
-	} else if (counter > 3) {
-		alert("You guessed 3 times. The computer's number is:", computerNum)
-	} else {
-		alert("Goodbye!")
+	for (i = 0; i < 3; i++) {
+		console.log(userNum);
+		if (userNum == computerNum) {
+			alert("Great, you won the game!")
+			break;
+		} else if (userNum > computerNum) {
+			prompt(userNum + " is too big, guess again: ")
+			counter += 1
+			console.log(counter)
+			// test()
+		} else if (userNum < computerNum) {
+			prompt(userNum + " is too small, guess again: ")
+			counter += 1
+			console.log(counter)
+		} else {
+			alert("Goodbye!")
+		}
 	}
 }
 
 
 
-
-
+// else if (counter > 3) {
+// 		alert("You guessed 3 times. The computer's number is:", computerNum)
+// 		console.log(counter)
+// 	} 

@@ -23,25 +23,58 @@ let allBooks = [
 ]
 
 
-let table = document.createElement("table")
-let thName = document.createElement("th")
+let table = document.createElement("table");
+let row = document.createElement("tr");
+table.appendChild(row);
+
+let thName = document.createElement("th");
+thName.innerHTML = "Title"
 let thAuthor = document.createElement("th")
+thAuthor.innerHTML = "Author"
 let thimage = document.createElement("th")
-document.body.appendChild(table).firstElement
-table.appendChild(thName)
-table.appendChild(thAuthor)
-table.appendChild(thimage)
-
-let trHarry = document.createElement("tr")
-let trTKAM = document.createElement("tr")
+thimage.innerHTML = "Image"
 
 
-let keysFirstObj = Object.keys(allBooks[0])
-let keysSecondObj = Object.keys(allBooks[1])
+row.appendChild(thName);
+row.appendChild(thAuthor);
+row.appendChild(thimage);
 
-for(i = 0; i < keysFirstObj.length; i++){
-	console.log(keysFirstObj[i])
+for (book of allBooks) {
+	let bookrow = document.createElement("tr");	
+	table.appendChild(bookrow);
+	let cellName = document.createElement("td");
+	cellName.innerHTML = book["title"];
+	if (book["alreadyRead"] == true) {
+		bookrow.style.color = "red"
+	}
+	bookrow.appendChild(cellName);
+	let cellAuthor = document.createElement("td");
+	cellAuthor.innerHTML = book["author"];
+	bookrow.appendChild(cellAuthor);
+	let cellImage = document.createElement("td");
+	let img = document.createElement("img");
+	img.setAttribute("src", book["image"]);
+	img.style.height = "100px"
+	cellImage.appendChild(img);
+	bookrow.appendChild(cellName);
+	bookrow.appendChild(cellAuthor);
+	bookrow.appendChild(cellImage);
 }
+document.body.appendChild(table);
+
+
+
+// let trHarry = document.createElement("tr")
+// let trTKAM = document.createElement("tr")
+
+// let keysFirstObj = Object.keys(allBooks[0])
+// let keysSecondObj = Object.keys(allBooks[1])
+
+// for(i = 0; i < keysFirstObj.length; i++){
+// 	let headers = document.createTextNode(keysFirstObj[i])
+
+// }
+
 
 // function addParagraph(sentence){
 // 	let p = document.createElement("p")

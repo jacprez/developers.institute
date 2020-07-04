@@ -1,0 +1,12 @@
+#globalStats {
+	display: grid;
+	margin-top: 10px;
+}
+
+th {
+	font-size: 22px;
+
+}
+td {
+	font-size: 20px
+}

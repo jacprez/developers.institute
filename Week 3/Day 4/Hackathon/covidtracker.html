@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Coronavirus Tracker</title>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="covidtracker.css">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+	<nav class="navbar sticky-top navbar-light bg-light">
+		<a class="navbar-brand" href="#">
+		<img src="virus.png" width="30" height="30" class="d-inline-block align-top" alt="">
+    COVID-19 Tracker
+  </a>
+<!-- 		<form class="form-inline" name="searchButton"> -->
+			
+	
+	<!-- 		</form> -->
+</nav>
+<div class="row">
+	<div class="col-2"></div>
+	<div class="col-8">
+		<div class="d-flex searchbar-align">
+			<div class="card shadow p-3 mb-5 bg-white rounded searchbar-card
+			">
+				<div class="card-body" style="display: flex;">
+					<input id="searchInput" onkeyup="searchCountry()" class="form-control mr-sm-2" type="search" placeholder="Search a country" aria-label="Search" style="font-family: 'Noto Serif TC', serif;">
+					<button id="searchBtn" class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+				</div>
+			  </div>
+		</div>
+	</div>
+	<div class="col-2"></div>
+</div>
+
+<div class="row">
+	<div class="col-1"></div>
+	<div class="col-10">
+		<div class="d-flex searchbar-align">
+
+<div class="card shadow p-3 mb-5 bg-white rounded 
+" style="width: 100%;">
+	<div class="card-body">
+		
+		<!-- <div class="jumbotron" id="jumbotronDiv"> -->
+			<h1 class="display-4">Global Coronavirus Stats:</h1>
+			<p id="lastUpdate"></p>
+			<hr class="my-4">
+		
+		<div id="globalStats">
+			<table class="globalCases">
+				<tr>
+					<th>New Confirmed:</th>
+					<th>New Deaths:</th>
+					<th>New Recovered:</th>
+					<th>Total Confirmed:</th>
+					<th>Total Deaths:</th>
+					<th>Total Recovered:</th>
+				</tr>
+				<tr>
+					<td id="gbNewConfirm"></td>
+					<td id="gbNewDeaths"></td>
+					<td id="gbNewRecovered"></td>
+					<td id="gbTotalConfirmed"></td>
+					<td id="gbTotalDeaths"></td>
+					<td id="gbTotalRecovered"></td>
+				</tr>
+			</table>
+		</div>
+		</div>
+		</div>
+		</div>
+	</div>
+	<div class="col-1"></div>
+	</div>
+  <!-- </div> -->
+
+  <div class="row">
+	<div class="col-1"></div>
+	<div class="col-10">
+		<div class="d-flex searchbar-align">
+
+<div id="countryCard"class="card shadow p-3 mb-5 bg-white rounded 
+" >
+	<div id = "countryStats" class="card-body">
+			<h2 id="countryHeader"></h2>
+		<table class="countryCases">
+			<tr>
+				<th>New Confirmed:</th>
+				<th>New Deaths:</th>
+				<th>New Recovered:</th>
+				<th>Total Confirmed:</th>
+				<th>Total Deaths:</th>
+				<th>Total Recovered:</th>
+			</tr>
+			<tr>
+				<td id="countryNewConfirm"></td>
+				<td id="countryNewDeaths"></td>
+				<td id="countryNewRecovered"></td>
+				<td id="countryTotalConfirmed"></td>
+				<td id="countryTotalDeaths"></td>
+				<td id="countryTotalRecovered"></td>
+			</tr>
+		</table>
+
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+	
+	
+
+<script type="text/javascript" src="covidtracker.js"></script>
+</body>
+</html>

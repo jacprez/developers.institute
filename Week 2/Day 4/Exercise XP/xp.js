@@ -49,7 +49,7 @@ function changeEnough(array_of_coins, total_price){
 		return false
 	}
 }
-
+changeEnough([1, 2, 3, 4], 12.32)
 
 // Exercise 4
 

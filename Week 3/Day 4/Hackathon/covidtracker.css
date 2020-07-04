@@ -1,0 +1,54 @@
+#globalStats {
+	display: grid;
+	margin-top: 10px;
+}
+
+h1, p, h2, th, td {
+	color: #DFEDF7;
+	font-family: 'Noto Serif TC', serif;
+}
+
+h2 {
+	font-size: 45px;
+	margin-bottom: 20px;
+}
+
+th {
+	font-size: 22px;
+	color: #DFEDF7;
+
+}
+td {
+	font-size: 20px;
+	color: #DFEDF7;
+}
+.searchbar-card{
+	width: 900px;
+	margin-top: 20px;
+}
+.searchbar-align{
+	justify-content: center ;
+}
+
+input {
+	width: 50%;
+}
+
+#countryCard {
+	visibility: hidden;
+	width: 100%;
+}
+
+#searchBtn{
+	width: 25%;
+	font-family: 'Noto Serif TC', serif;
+}
+
+.card-body {
+	background-color: #343434;
+	width: 100%;
+}
+
+body {
+	background-color: #A9C8E1;;
+}

@@ -10,13 +10,22 @@ matrix = [
 ]
 
 text = ''
+invalid_char_count = 0
+
+def is_valid(char):
+    return type(char) is str and char.isalnum()
+
 for col in range(3):
     for row in matrix:
         char = row[col]
-        if type(char) is str and char.isalpha():
+
+        if is_valid(char):
+            if invalid_char_count > 1:
+                invalid_char_count = 0
+                text += ' '
             text += char
         else:
-            text += ' '
+            invalid_char_count += 1
 
 
 print(text)

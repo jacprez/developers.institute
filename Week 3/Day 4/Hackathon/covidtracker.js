@@ -85,7 +85,7 @@ function useData(result){
 }
 
 function displayGlobalStats(result){
-	// data = result;
+	data = result;
 	console.log(result)
 		let gblNewConfirmed = result.Global.NewConfirmed
 		let gblNewDeaths = result.Global.NewDeaths
@@ -106,45 +106,6 @@ function displayGlobalStats(result){
 
 }
 
-// function countryList(result){
-// 	data=result;
-// 	let countryArr = data.Countries;
-// 	document.getElementById('searchBtn').addEventListener('click', () => {
-// 				let searchTerm=document.getElementById('searchInput').value;
-// 				for (let i in countryArr){
-// 					if (searchTerm == countryArr[i].Country){
-// 						console.log(countryArr[i]);
-// 					}
-
-
-
-// let countryArr = data.Countries
-// console.log(countryArr)
-
-	
-// function searchCountry() {
-// 	let data;
-// 	console.log(data)
-// 	let input = document.getElementById("searchInput");
-// 	let filter = input.value.toUpperCase();
-// 	let table = document.createElement("table");
-
-// 	tr = table.getElementsByTagName("tr");
-// 	for (i = 0; i < tr.length; i++) {
-// 		td = tr[i].getElementsByTagName("td")[0];
-// 		if (td) {
-// 		txtValue = td.textContent || td.innerText;
-// 		if (txtValue.toUpperCase().indexOf(filter) > -1) {
-// 			tr[i].style.display = "";
-// 		} else {
-// 			tr[i].style.display = "none";
-// 		}
-// 		}       
-// 	}
-// }
-
-
-
 
 function countryData(result){
 	data=result;
@@ -154,7 +115,6 @@ function countryData(result){
 		for (let i in countryArr){
 			if (searchTerm == countryArr[i].Country){
 				document.getElementById("countryStats").style.display = "grid";
-				document.getElementById("countryCard").style.visibility = "visible"
 				let countryName = countryArr[i].Country;
 				document.getElementById("countryHeader").innerHTML = countryName;
 				let countryNewConfirm = countryArr[i].NewConfirmed;
@@ -170,21 +130,15 @@ function countryData(result){
 				document.getElementById("countryTotalDeaths").innerText = countryTotalDeaths.toLocaleString('en');
 				document.getElementById("countryTotalRecovered").innerText = countryTotalRecovered.toLocaleString('en');
 				document.getElementById("jumbotronDiv").style.padding = "0px";
-				document.getElementById("jumbotronDiv").style.padding = "0px";
-				document.getElementsByClassName("display-4")[0].style.fontSize = "20px"
+				document.getElementsByClassName("display-4")[0].style.fontSize = "10px"
 				break;
 			}else{
-				console.log(searchTerm + " not found.");
 			}
 
 		}
 	})
 }
-// Afghanistan
-
-
-
-// function formatCountryStats(countryIndex)
+"Afghanistan"
 
 // 	console.log(countryArray)
 // 	for (let i in countryArray) {

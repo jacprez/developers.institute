@@ -72,7 +72,5 @@ print(newnew_dict)
 sorted_users = sorted(tuple(users))
 sorted_dict = dict(zip(sorted_users, indexes))
 print(sorted_dict)
-# index = 0
-# while index < len(users):
-#     print((index, users[index])
-#     index += 1
+# 4
+

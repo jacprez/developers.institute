@@ -26,18 +26,21 @@ sizes = ["Medium", "Large"]
 make_shirt(*sizes)
 
 # Exercise 4
-jacs_roomates = ["Jac", "Gabi", "Dennis", "Kobe", "Tom"]
+jacs_roommates = ["Jac", "Gabi", "Dennis", "Kobe", "Tom"]
 
 
-def show_roommate(*args):
-    for arg in args:
-        make_great(arg)
+def show_roommate(roommate_list):
+    for roommate in roommate_list:
+        print(roommate)
 
-def make_great(*args):
-    for arg in args:
-        print(f"{arg} the Great!")
+def make_great(roommate_list):
+    for index in range(len(roommate_list)):
+        roommate_list[index] = roommate_list[index] + " the great."
+    return roommate_list
 
-show_roommate(*jacs_roomates)
+
+show_roommate(jacs_roommates)
+print(make_great(jacs_roommates))
 
 # Exercise 5
 
